@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>URL Shortener Microservice</title>
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+  <body>
+    <h1>URL Shortener Microservice</h1>
+
+    <form action="/api/shorturl" method="post">
+      <label for="url_input">URL to shorten:</label>
+      <input id="url_input" type="text" name="url" placeholder="https://example.com" />
+      <button type="submit">Shorten</button>
+    </form>
+
+    <p>Example usage:</p>
+    <code>POST /api/shorturl with url=https://www.freecodecamp.org</code>
+    <p>Then:</p>
+    <code>GET /api/shorturl/&lt;short_url&gt;</code>
+  </body>
+</html>
